@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:newsproj/Home/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp( NewsApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class NewsApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      color: Colors.amber,
+      title: 'News App',
+      debugShowCheckedModeBanner: false,
+      home:HomeScreen(),
       
     );
   }
