@@ -9,9 +9,10 @@ class TabItemWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top:10),
-      padding: EdgeInsets.symmetric(horizontal: 5,vertical: 3),
+      margin: EdgeInsets.only(left:3,top:10),
+      padding: EdgeInsets.symmetric(horizontal: 2,vertical: 3),
       decoration: BoxDecoration(
+       
         borderRadius: BorderRadius.circular(10),
         border: Border.all(color: Color(0xff1877f2),width: 2),
         color: isSelected?Color(0xff1877f2):Colors.transparent,
